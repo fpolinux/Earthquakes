@@ -11,7 +11,7 @@ import plotly.express as px
 #print("Path to dataset files:", path)
 
 # Hardcoding data source
-data = r"C:\Users\nansh\.cache\kagglehub\datasets\alessandrolobello\the-ultimate-earthquake-dataset-from-1990-2023\versions\4\Eartquakes-1990-2023.csv"
+data = r"Earthquakes-1990-2023"
 df = pd.read_csv(f"{data}")
 df["time"] = pd.to_datetime(df["time"], unit="ms")
 df.rename(columns={"magnitudo": "magnitude"}, inplace=True)
